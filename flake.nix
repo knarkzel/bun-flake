@@ -8,8 +8,8 @@
     nixpkgs,
   }: let
     pkgs = import nixpkgs {system = "x86_64-linux";};
-    version = "0.2.2";
-    sha256 = "eVEopSvyjzY8J3q52wowTlSVHZ4s1lIc8/yU6Ya+0QU=";
+    version = "0.4.0";
+    sha256 = "sha256-LMutdGNiGp4aLmeqMLk8Pc0xIjqgWPO6GSli1EfTgkY=";
     bun_install = "${builtins.getEnv "HOME"}/.bun";
   in {
     packages.x86_64-linux.default = pkgs.stdenv.mkDerivation {
